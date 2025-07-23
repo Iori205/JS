@@ -24,19 +24,3 @@ function problem3(a, b, c) {
   }
 }
 problem3(3, 4, 5);
-
-function problem4(num) {
-  if (num / 100 < 10) {
-    console.log(3);
-  }
-  if (num / 100 > 10) {
-    console.log(4);
-  }
-  if (num / 100 < 100) {
-    console.log(4);
-  }
-  if (num / 100 > 100) {
-    console.log(5);
-  }
-}
-problem4(150);
