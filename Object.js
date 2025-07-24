@@ -22,23 +22,21 @@
 let grades = [10, 2, 3, 4, 5, 6, -9, -7, 7, 8, 9, 10, 10];
 // console.log(grades.length);
 
-function even(arr) {
-  let num = 0;
-  let k = 0;
+// function even(arr) {
+//   let num = 0;
+//   let k = 0;
 
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      //   console.log(arr[i]);
-      num = num + arr[i];
-    }
-    // // if (arr[i] % 2 == 0) {
-    // //   console.log(arr[i].length);
-    // }
-  }
-  return num;
-}
-let result = even(grades);
-console.log(result);
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       num = num + arr[i];
+//       k = k + 1;
+//     }
+//   }
+//   avg = num / k;
+//   return avg;
+// }
+// let result = even(grades);
+// console.log(result);
 
 // console.log(grades.length);
 
@@ -53,3 +51,29 @@ console.log(result);
 // }
 // let maxgrade = findmaxgrade(grades);
 // console.log(maxgrade);
+
+// function evenmin(arr) {
+//   let min = arr[0];
+
+//   for (i = 0; i < arr.length; i++) {
+//     if ((arr[i] % 2 == 0) & (arr[i] < min)) {
+//       min = arr[i];
+//     }
+//   }
+//   return min;
+// }
+// let result = evenmin(grades);
+// console.log(result);
+
+// function oddmin(arr) {
+//   let min = arr[0];
+
+//   for (i = 0; i < arr.length; i++) {
+//     if ((arr[i] % 2 > 0) & (arr[i] < min)) {
+//       min = arr[i];
+//     }
+//   }
+//   return min;
+// }
+// let result = oddmin(grades);
+// console.log(result);
