@@ -1,7 +1,7 @@
 // Top student find
 let students = [
   { name: "boldoo", age: 20, grade: 20, balance: 10, gender: "male" },
-  { nane: "dorjoo", age: 15, grade: 30, balance: 10, gender: "male"},
+  { nane: "dorjoo", age: 15, grade: 30, balance: 10, gender: "male" },
   { name: "tsetsgee", age: 30, grade: 100, balance: 15, gender: "female" },
   { name: "bata", age: 10, grade: 50, balance: 2, gender: "male" },
   { name: "nandia", age: 30, grade: 100, balance: 15, gender: "female" },
@@ -114,109 +114,114 @@ console.log(balance);
 // Only male people
 
 function findgender(arr) {
-  let num =0 
+  let num = 0;
   for (i = 0; i < arr.length; i++) {
-    if(arr[i].gender == "male") {
-      num = num + 1
+    if (arr[i].gender == "male") {
+      num = num + 1;
     }
   }
-  return num
+  return num;
 }
-let gender = findgender(students)
-console.log(gender)
+let gender = findgender(students);
+console.log(gender);
 
 //  Only female people
 
 function fepercent(arr) {
-  let females = 0
-  for(i=0; i < arr.length; i++) {
+  let females = 0;
+  for (i = 0; i < arr.length; i++) {
     if (arr[i].gender == "female") {
-      females = females + 1
+      females = females + 1;
     }
   }
-  k = females / arr.length * 100
-  return k
+  k = (females / arr.length) * 100;
+  return k;
 }
-let percent = fepercent(students)
-console.log(percent + "%")
+let percent = fepercent(students);
+console.log(percent + "%");
 
-//  1-100 number if /3 fizz and /5 buzz and 3 and 5/ bizzbuzz find 
+//  1-100 number if /3 fizz and /5 buzz and 3 and 5/ bizzbuzz find
 
 // let numbers = [ 1,2,3,4,5,6,7,8,9,10]
 
 function finddivide(arr) {
-  let num = []
-  for(i=0; i <= arr.length; i++) {
-    if(arr[i] % 3 === 0) {
-      num.push("fiiz")
-    } else if(arr[i] % 5 === 0) {
-      num.push("buzz")
-    } else {arr}
-  } 
-  return num
+  let num = [];
+  for (i = 0; i <= arr.length; i++) {
+    if (arr[i] % 3 === 0) {
+      num.push("fiiz");
+    } else if (arr[i] % 5 === 0) {
+      num.push("buzz");
+    } else {
+      arr;
+    }
+  }
+  return num;
 }
-let divide = finddivide([ 1,2,3,4,5,6,7,8,9,10 ])
-console.log(divide)
+let divide = finddivide([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(divide);
 
 // want 1-100 numbers
 
-function find_divide(arr) {
-  for(i=0; i <= arr.length; i++) {
-    if(arr[i] % 3 === 0 && arr[i] % 5 === 0 ) {
-      arr[i] = "fizzbuzz";
-    } else if (arr[i] % 3 === 0) {
-      arr[i] = "fizz";
-    } else if (arr[i] % 5 === 0) {
-      arr[i] = "buzz";
-    }
+const find_divide = () => {
+  let k = [];
+  for (i = 1; i <= 30; i++) {
+    k = k + i;
+    if (k[i] % 3 === 0 && k[i] % 5 === 0) {
+      k[i] = "fizzbuzz";
+    } else if (k[i] % 3 === 0) {
+      k[i] = "fizz";
+    } else if (k[i] % 5 === 0) {
+      k[i] = "buzz";
+    } else k[i];
   }
-  return arr
-} 
-let numbers = [1,2,3,4,5,6,7,8,9,10,15,30]
-console.log(find_divide(numbers))
+  return k[i];
+};
+console.log(find_divide());
 
-// 
+//
 
-let input = [4,9,1,12,7]
+// let input = [4, 9, 1, 12, 7];
 
-function maxnum(arr) {
-  for(i=0; i <= arr.length; i++)
-    if(arr[0] < arr[i]) {
-      arr[0] = arr[i]
-    }
-    return arr[0] 
-}
-console.log(maxnum(input))
+// function maxnum(arr) {
+//   for (i = 0; i <= arr.length; i++)
+//     if (arr[0] < arr[i]) {
+//       arr[0] = arr[i];
+//     }
+//   return arr[0];
+// }
+// console.log(maxnum(input));
 
-// 
- let even = [-5,10,-2,3,7,]
- function evensum(arr) {
-  let sum = 0
-  for(i=0; i <  arr.length; i++) {
-    if (arr[i] > 0) {
-       sum = sum + arr[i]
-    }
-  }
-  return sum
- } 
- console.log(evensum(even))
+//
+// let even = [-5, 10, -2, 3, 7];
+// function evensum(arr) {
+//   let sum = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       sum = sum + arr[i];
+//     }
+//   }
+//   return sum;
+// }
+// console.log(evensum(even));
 
 //  Random number /2 , /3 , /5 diwide find
 
-function multiple(arr) {
-  for(i=0; i <= arr.length; i++) {
-    if(arr[i] % 2 === 0 && arr[i] % 3 === 0 && arr[i] % 5 === 0) {
-      arr[i] = "all";
-    } else if (i % 2 === 0) {
-      arr[i] = "two";
-    } else if (i % 3 === 0 ) {
-      arr[i] = "three";
-    } else if (i % 5 === 0) {
-      arr[i] = "five"
-    }
-  }
-  return arr
-}
-let asd = [1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22,23,24,25,26,27,28,29,30]
-console.log(multiple(asd))
-
+// function multiple(arr) {
+//   for (i = 0; i <= arr.length; i++) {
+//     if (arr[i] % 2 === 0 && arr[i] % 3 === 0 && arr[i] % 5 === 0) {
+//       arr[i] = "all";
+//     } else if (i % 2 === 0) {
+//       arr[i] = "two";
+//     } else if (i % 3 === 0) {
+//       arr[i] = "three";
+//     } else if (i % 5 === 0) {
+//       arr[i] = "five";
+//     }
+//   }
+//   return arr;
+// }
+// let asd = [
+//   1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 21,
+//   22, 23, 24, 25, 26, 27, 28, 29, 30, 40,
+// ];
+// console.log(multiple(asd));
